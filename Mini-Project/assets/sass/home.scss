@@ -1,0 +1,125 @@
+@font-face {
+    font-family: Roboto;
+    src: url(../fonts/Roboto-Regular.ttf);
+}
+
+@font-face {
+    font-family: Robotobold;
+    src: url(../fonts/Roboto-Bold.ttf);
+}
+
+@font-face {
+    font-family: Jost;
+    src: url(../fonts/Jost-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: Oregano;
+    src: url(../fonts/Oregano-Regular.ttf);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container-main{
+    width: 85%;
+    margin: 0 auto;
+}
+
+
+#header-up{
+    height: 34px;
+    background-color: #010F1C;
+    .left-side{
+        display: flex;
+        align-items: center;
+        height: 33px;
+        p{
+            color: white;
+            font-size: 13.5px;
+            font-weight: 500;
+            margin-left: 10px;
+            margin-top: 16px;
+            opacity: 0.8;
+        }
+    }
+
+    .right-side{
+        width: 100%;
+        height: 34px;
+        align-items: center;
+        display: flex;
+        justify-content: flex-end;
+        ul{
+            list-style: none;
+            display: flex;
+            margin: 0;
+            padding: 0;
+            li{
+                display: flex;
+                font-size: 13.5px;
+                font-weight: 600;
+                height: 100%;
+                padding: 2px 13px 3px 19px;
+                border-right: 1px solid rgba(255, 255, 255, .2);
+                a{
+                    position: relative;
+                    display: flex;
+                    align-items: center;
+                    text-decoration: none;
+                    color: white;
+                    gap: 6px;
+                    cursor: pointer;
+                    i{
+                        color: white;
+                        margin-top: 6px;
+                    }
+                }
+                .content-menu{
+                    position: absolute;
+                    margin-top: 32px;
+                    z-index: -1;
+                    opacity: 0;
+                    transition: all 0.3s;
+                    ul{
+                        display: flex;
+                        list-style: none;
+                        flex-direction: column;
+                        background-color: white;
+                        box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+                        padding: 13px 16px;
+                        li{
+                            padding: 0;
+                            line-height: 29px;
+                            a{
+                                color: #010F1C;
+                                transition: 0.3s;
+                                &:hover{
+                                    color: blue;
+                                }
+                            }
+                        }
+                    }
+                }
+                .content-menu-down{
+                    animation: drop-down 1s;
+                    display: block;
+                    z-index: 4;
+                    opacity: 1;
+                }
+
+                @keyframes drop-down {
+                    from{
+                        opacity: 0;
+                    }
+                    to{
+                        opacity: 1;
+                    }
+                }
+            }
+        }
+    }
+}
