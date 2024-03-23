@@ -108,5 +108,36 @@ $(function(){
     
 
 
+      $("#products .product-category .new-product").click(function (e) {
+        e.preventDefault();
+        $(this).addClass("active");
+        $("#products .product-category .featured-product").removeClass("active");
+        $("#products .product-category .top-product").removeClass("active");
+        $("#products .new-products-list").removeClass("d-none");
+        $("#products .featured-products-list").addClass("d-none");
+        $("#products .top-products-list").addClass("d-none");
+      });
+    
+      $("#products .product-category .featured-product").click(function (e) {
+        e.preventDefault();
+        $(this).addClass("active");
+        $("#products .product-category .new-product").removeClass("active");
+        $("#products .product-category .top-product").removeClass("active");
+        $("#products .new-products-list").addClass("d-none");
+        $("#products .featured-products-list").removeClass("d-none");
+        $("#products .top-products-list").addClass("d-none");
+      });
+    
+      $("#products .product-category .top-product").click(function (e) {
+        e.preventDefault();
+        $(this).addClass("active");
+        $("#products .product-category .featured-product").removeClass("active");
+        $("#products .product-category .new-product").removeClass("active");
+        $("#products .new-products-list").addClass("d-none");
+        $("#products .featured-products-list").addClass("d-none");
+        $("#products .top-products-list").removeClass("d-none");
+      });
+
+
 });
 
