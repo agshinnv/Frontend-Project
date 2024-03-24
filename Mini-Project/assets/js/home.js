@@ -139,5 +139,37 @@ $(function(){
       });
 
 
+      $("#slider-2-tablet .pages .first-dot").click(function(){
+        $(this).addClass("active-dot");
+        $(this).siblings().removeClass("active-dot");
+        $(".first-slider").addClass("active-slider");
+        $(".first-slider").siblings().removeClass("active-slider");
+        $(".first-image").addClass("active-image");
+        $(".first-image").siblings().removeClass("active-image");
+      });
+
+      $("#slider-2-tablet .pages .second-dot").click(function(){
+        $(this).addClass("active-dot");
+        $(this).siblings().removeClass("active-dot");
+        $(".second-slider").addClass("active-slider");
+        $(".second-slider").siblings().removeClass("active-slider");
+        $(".second-image").addClass("active-image");
+        $(".second-image").siblings().removeClass("active-image");
+      });
+
+
+      $("#slider-2-tablet .pages .third-dot").click(function(){
+        $(this).addClass("active-dot");
+        $(this).siblings().removeClass("active-dot");
+        $(".third-slider").addClass("active-slider");
+        $(".third-slider").siblings().removeClass("active-slider");
+        $(".third-image").addClass("active-image");
+        $(".third-image").siblings().removeClass("active-image");
+      });
+
+
+      
+
+
 });
 
