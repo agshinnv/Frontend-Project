@@ -992,7 +992,7 @@ body {
   padding-bottom: 7px;
 }
 .product .content .user-ratings i {
-  font-size: 13px;
+  font-size: 12px;
   color: #FFB21D;
 }
 .product .content .user-ratings span {
@@ -1429,4 +1429,118 @@ body {
     opacity: 1;
     transform: translate(0);
   }
+}
+
+#new-arrivals .title {
+  padding-top: 70px;
+  padding-bottom: 60px;
+}
+#new-arrivals .title h1 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  font-size: 36px;
+  font-family: RobotoBold;
+}
+#new-arrivals .title img {
+  position: absolute;
+  left: 0;
+  bottom: -14px;
+  z-index: -1;
+}
+#new-arrivals .controllers {
+  padding-bottom: 22px;
+  display: flex;
+  align-items: center;
+  height: 100%;
+  justify-content: flex-end;
+  gap: 11px;
+}
+#new-arrivals .controllers div {
+  width: 42px;
+  height: 42px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid rgba(1, 15, 28, 0.1019607843);
+  border-radius: 50%;
+  transition: 0.8s;
+  cursor: pointer;
+}
+#new-arrivals .controllers div img {
+  filter: invert(100%);
+}
+#new-arrivals .controllers div:hover {
+  background-color: #0989FF;
+}
+
+#filtered-products .title {
+  padding-top: 75px;
+  padding-bottom: 40px;
+}
+#filtered-products .title h1 {
+  position: relative;
+  width: 100%;
+  z-index: 1;
+  font-size: 25px;
+  font-family: RobotoBold;
+}
+#filtered-products .title img {
+  position: absolute;
+  height: 22px;
+  left: -4px;
+  bottom: -4px;
+  z-index: -1;
+}
+#filtered-products .products {
+  display: flex;
+  padding-bottom: 14px;
+  margin-bottom: 14px;
+  border-bottom: 1px solid #EAEBED;
+  width: 100%;
+}
+#filtered-products .products .image {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: #eceff4;
+}
+#filtered-products .products .image img {
+  width: 100%;
+  height: 100%;
+  transition: 0.6s;
+}
+#filtered-products .products .image:hover img {
+  transform: scale(1.2);
+}
+#filtered-products .products .product-details {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  height: 100%;
+}
+#filtered-products .products .product-details span {
+  font-size: 13px;
+  color: #55585b;
+}
+#filtered-products .products .product-details a {
+  text-decoration: none;
+  margin-bottom: 13px;
+  font-size: 14px;
+  color: #010F1C;
+  font-family: RobotoBold;
+}
+#filtered-products .products .product-details i {
+  font-size: 11px;
+  color: #FFB21D;
+}
+#filtered-products .products .product-details .price .old-price {
+  font-size: 11px;
+  color: #55585b;
+  text-decoration: line-through;
+}
+#filtered-products .products .product-details .price .new-price {
+  font-size: 14px;
+  color: #0989FF;
+  font-family: RobotoBold;
 }/*# sourceMappingURL=home.css.map */
