@@ -2149,8 +2149,9 @@ body {
       display: flex;
       align-items: center;
       height: 100%;
-      font-size: 14px;
+      font-size: 16px;
       color: #888a8c;
+      font-family: Jost;
     }
     .payments {
       display: flex;
@@ -2163,8 +2164,8 @@ body {
   width: 44px;
   height: 44px;
   line-height: 44px;
-  bottom: 0;
-  right: 0;
+  bottom: 43px;
+  right: 6px;
   display: flex;
   align-items: center;
   justify-content: center;
