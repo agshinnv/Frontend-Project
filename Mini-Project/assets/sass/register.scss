@@ -789,6 +789,7 @@
     position: fixed;
     border-radius: 50%;
     color: white;
+    transition: all 0.7s;
   
     .arrow {
       color: white;
@@ -798,7 +799,6 @@
       cursor: pointer;
       background-color: #333;
       transform: translateY(-5px);
-      transition: 0.7s;
     }
   }
   
