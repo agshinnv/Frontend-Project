@@ -1,0 +1,704 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shop Details Page</title>
+    <link rel="icon" href="./assets/icons/head-icon.ico" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.css"
+      integrity="sha512-vKMx8UnXk60zUwyUnUPM3HbQo8QfmNx7+ltw8Pm5zLusl1XIfwcxo8DbWCqMGKaWeNxWA8yrx5v3SaVpMvR3CA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./assets/sass/product-detail.css" />
+  </head>
+  <body>
+    <header>
+      <section id="header-up">
+        <div class="container-main">
+          <div class="row">
+            <div class="col-6">
+              <div class="left-side">
+                <div class="subscribe">
+                  <a href=""><i class="fa-brands fa-facebook-f fb"></i></a>
+                  <div class="followers">
+                    <a href=""> 7500k Followers</a>
+                  </div>
+                </div>
+                <div class="contact">
+                  <img src="./assets/icons/phone-icon.svg" alt="" />
+                  <div class="number">
+                    <a href="">+(402) 763 282 46</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="right-side">
+                <ul>
+                  <li>
+                    <a class="content"
+                      >English<i class="fa-solid fa-angle-down"></i
+                    ></a>
+                    <div class="content-menu">
+                      <ul>
+                        <li><a href="">Spanish</a></li>
+                        <li><a href="">Russian</a></li>
+                        <li><a href="">Portuguese</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="content"
+                      >USD<i class="fa-solid fa-angle-down"></i
+                    ></a>
+                    <div class="content-menu">
+                      <ul>
+                        <li><a href="">EUR</a></li>
+                        <li><a href="">CHF</a></li>
+                        <li><a href="">GBP</a></li>
+                        <li><a href="">KWD</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                  <li>
+                    <a class="content"
+                      >Setting<i class="fa-solid fa-angle-down"></i
+                    ></a>
+                    <div class="content-menu">
+                      <ul>
+                        <li><a href="">My Profile</a></li>
+                        <li><a href="">Wishlist</a></li>
+                        <li><a href="">Cart</a></li>
+                        <li><a href="">Logout</a></li>
+                      </ul>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="header-down">
+        <div class="container-main">
+          <div class="row">
+            <div class="col-2">
+              <div class="left-side">
+                <div class="logo">
+                  <img src="./assets/icons/logo.svg" alt="" />
+                </div>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="header-navbar">
+                <ul>
+                  <li><a href="">Home</a></li>
+                  <li><a href="">Shop</a></li>
+                  <li>
+                    <a href="" class="products-icon"
+                      >Products<i class="fa-solid fa-angle-down"></i
+                    ></a>
+                  </li>
+                  <li><a href="">Coupons</a></li>
+                  <li><a href="">Blog</a></li>
+                  <li><a href="">Contact</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-5">
+              <div class="right-side">
+                <div class="searching">
+                  <div class="content">
+                    <input type="text" placeholder="Search for Products..." />
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                  </div>
+                </div>
+                <div class="actions">
+                  <a href="" class="updownarrow">
+                    <img src="./assets/icons/UpDownArrow-iocn.svg" alt="" />
+                  </a>
+                  <a href="" class="wishlist">
+                    <img src="./assets/icons/wishlist-icon.svg" alt="" />
+                    <span class="wishlist-count">0</span>
+                  </a>
+                  <a href="" class="cart">
+                    <img src="./assets/icons/cart-icon.svg" alt="" />
+                    <span class="cart-count">0</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </header>
+
+    <main>
+      <section id="product">
+        <div class="container-main">
+          <div class="row">
+            <div class="col-6">
+              <div class="prd-image">
+                <div class="title">
+                  <img src="./assets/icons/home-icon.svg" alt="" />
+                  <a href="">Home</a>
+                  <a href="">Headphones</a>
+                  <a href="">Bluetooth Headphones</a>
+                  <a href="">Headphones Wireless</a>
+                </div>
+                <div class="selecting-prd-image">
+                  <div class="all-prd-image">
+                    <div class="product image-1">
+                      <img src="./assets/images/1st-headphone.png" alt="" />
+                    </div>
+                    <div class="product image-2">
+                      <img src="./assets/images/2st-headphone.png" alt="" />
+                    </div>
+                    <div class="product image-3">
+                      <img src="./assets/images/3th-headphone.png" alt="" />
+                    </div>
+                    <div class="product image-4">
+                        <img src="./assets/images/4rd-headphone.png" alt="" />
+                      </div>
+                  </div>
+                  <div class="active-prd-image">
+                    <div class="img1">
+                      <img src="./assets/images/1st-headphone.png" alt="" />
+                    </div>
+                    <div class="img2 d-none">
+                      <img src="./assets/images/2st-headphone.png" alt="" />
+                    </div>
+                    <div class="img3 d-none">
+                      <img src="./assets/images/3th-headphone.png" alt="" />
+                    </div>
+                    <div class="img4 d-none">
+                        <img src="./assets/images/4rd-headphone.png" alt="" />
+                      </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-6">
+              <div class="product-details-wrapper">
+                <span>Headphones</span>
+                <h3>Headphones Wireless</h3>
+                <div class="stars">
+                  <span class="in-stock">in-stock</span>
+                  <i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i
+                  ><i class="fa-solid fa-star"></i>
+                  <span class="rev">(3 Reviews)</span>
+                </div>
+                <div class="product-info">
+                  <span>
+                    Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra
+                    Evolve2 75 USB-A MS Teams Stereo Headset ha...
+                  </span>
+                  <a href="">See more</a>
+                </div>
+                <div class="price">
+                  <span class="old">$120</span>
+                  <span class="new"> $103.20 </span>
+                </div>
+                <div class="color-variations">
+                  <div class="color"></div>
+                  <div class="color"></div>
+                  <div class="color"></div>
+                  <div class="color"></div>
+                </div>
+                <div class="add-to-cart">
+                  <div class="quantity">
+                    <i class="fa-solid fa-minus minus"></i>
+                    <span>1</span>
+                    <i class="fa-solid fa-plus plus"></i>
+                  </div>
+                  <button>Add To Cart</button>
+                </div>
+                <div class="buy-now">
+                  <button>Buy Now</button>
+                  <span
+                    >SKU:
+                    <p>NVB7SDVX44</p>
+                  </span>
+                  <span
+                    >Category:
+                    <p>Headphones</p>
+                  </span>
+                  <span
+                    >Tag:
+                    <p>Android</p>
+                  </span>
+                </div>
+                <div class="social-networks">
+                  <span>Share:</span>
+                  <div class="icon">
+                    <i class="fa-brands fa-facebook-f"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-twitter"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-linkedin-in"></i>
+                  </div>
+                  <div class="icon">
+                    <i class="fa-brands fa-vimeo-v"></i>
+                  </div>
+                </div>
+                <div class="refundable">
+                  <ul>
+                    <li>
+                      <img src="./assets/icons/accept-icon.svg" alt="" />
+                      30 days easy returns
+                    </li>
+                    <li>
+                      <img src="./assets/icons/accept-icon.svg" alt="" />
+                      Order yours before 2.30pm for same day dispatch
+                    </li>
+                  </ul>
+                </div>
+                <div class="payments">
+                  <p>
+                    Guaranteed safe <br />
+                    & secure checkout
+                  </p>
+                  <div class="payment-options">
+                    <img src="./assets/images/payments.png" alt="" />
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="product-details">
+              <div class="menu-tabs">
+                <div class="desc-tab">
+                  <button>Description</button>
+                </div>
+                <div class="desc-line">
+                  <span></span>
+                </div>
+                <div class="info-tab">
+                  <button>Additional information</button>
+                </div>
+                <div class="info-line d-none">
+                  <span></span>
+                </div>
+                <div class="review-tab">
+                  <button>Reviews (3)</button>
+                </div>
+                <div class="rev-line d-none">
+                  <span></span>
+                </div>
+              </div>
+              <div class="description">
+                <span>Headphones</span>
+                <h3>Headphones Wireless</h3>
+                <p>
+                  Jabra Evolve2 75 USB-A MS Teams Stereo Headset The Jabra Evolve2 75 USB-A MS Teams Stereo Headset has replaced previous hybrid working standards. Industry-leading call quality thanks to top-notch audio engineering. With this intelligent headset, you can stay connected and productive from the first call of the day to the last train home. With an ergonomic earcup design, this headset invented a brand-new dual-foam technology. You will be comfortable from the first call to the last thanks to the re-engineered leatherette ear cushion design that allows for better airflow. We can provide exceptional noise isolation and the best all-day comfort by mixing firm foam for the outer with soft foam for the interior of the ear cushions. So that you may receive Active Noise-Cancellation (ANC) performance that is even greater in a headset that you can wear for whatever length you wish. The headset also offers MS Teams Certifications and other features like Busylight, Calls controls, Voice guiding, and Wireless range (ft): Up to 100 feet. Best-in-class. Boom The most recent Jabra Evolve2 75 USB-A MS Teams Stereo Headset offers professional-grade call performance that leads the industry, yet Evolve2 75 wins best-in-class. Additionally, this includes a redesigned microphone boom arm that is 33 percent shorter than the Evolve 75 and offers the industry-leading call performance for which Jabra headsets are known. It complies with Microsoft's Open Office criteria and is specially tuned for outstanding conversations in open-plan workplaces and other loud environments when the microphone boom arm is lowered in Performance Mode.
+                </p>
+              </div>
+              <div class="additional d-none">
+                <table>
+                  <tbody>
+                    <tr>
+                      <td>Standing screen display size</td>
+                      <td>Screen display Size 10.4</td>
+                    </tr>
+                    <tr>
+                      <td>Colors</td>
+                      <td>Purply Blue, Light Grey, Baby Pink, Bluish Cyan</td>
+                    </tr>
+                    <tr>
+                      <td>Screen Resolution</td>
+                      <td>1920 x 1200 Pixels</td>
+                    </tr>
+                    <tr>
+                      <td>Max Screen Resolution</td>
+                      <td>2000 x 1200</td>
+                    </tr>
+                    <tr>
+                      <td>Processor</td>
+                      <td>2.3 GHz (128 GB)</td>
+                    </tr>
+                    <tr>
+                      <td>Graphics Coprocessor</td>
+                      <td>Exynos 9611, Octa Core (4x2.3GHz + 4x1.7GHz)</td>
+                    </tr>
+                    <tr>
+                      <td>Wireless Type</td>
+                      <td>802.11a/b/g/n/ac, Bluetooth</td>
+                    </tr>
+                  </tbody>
+                </table>
+              </div>
+              <div class="reviews d-none">
+                <div class="row">
+                  <div class="col-6">
+                    <div class="review-statics">
+                      <div class="rev-detail">
+                        <h3>Customer reviews</h3>
+                      </div>
+                      <div class="stars">
+                        <span>4.5</span>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <span>(3 Reviews)</span>
+                      </div>
+                      <div class="star-5">
+                        <span>5 Star</span>
+                        <div class="rating-82">
+                          <span></span>
+                        </div>
+                          <span>82%</span>
+                      </div>
+                      <div class="star-4">
+                        <span>4 Star</span>
+                        <div class="rating-30">
+                          <span></span>
+                        </div>
+                          <span>30%</span>
+                      </div>
+                      <div class="star-3">
+                        <span>3 Star</span>
+                        <div class="rating-15">
+                          <span></span>
+                        </div>
+                          <span>15%</span>
+                      </div>
+                      <div class="star-2">
+                        <span>2 Star</span>
+                        <div class="rating-6">
+                          <span></span>
+                        </div>
+                          <span>6%</span>
+                      </div>
+                      <div class="star-1">
+                        <span>1 Star</span>
+                        <div class="rating-10">
+                          <span></span>
+                        </div>
+                          <span>10%</span>
+                      </div>
+                    </div>
+                    <div class="prd-rev">
+                      <h3>Rating & Review</h3>
+                    </div>
+                    <div class="user-review">
+                      <div class="user">
+                        <img src="./assets/images/John-Doe.jpg" alt="" />
+                      </div>
+                      <div class="john smith">
+                        <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="day-content">
+                          <h3>John doe</h3>
+                          <span>06 March, 2023</span>
+                        </div>
+                          <p>
+                            Designed very similarly to the nearly double priced
+                            Galaxy tab S6, with the <br />only removal being.
+                          </p>
+                      </div>
+                    </div>
+                    <div class="user-review">
+                      <div class="user">
+                        <img src="./assets/images/Smith-Doe.jpg" alt="" />
+                      </div>
+                      <div class="john smith">
+                        <div class="stars">
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                          <i class="fa-solid fa-star"></i>
+                        </div>
+                        <div class="day-content">
+                          <h3>Smith Doe</h3>
+                          <span>07 March, 2023</span>
+                        </div>
+                          <p>
+                            Designed very similarly to the nearly double priced
+                            Galaxy tab S6, with the <br />only removal being.
+                          </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="rev-title">
+                      <h3>Review this product</h3>
+                      <p>
+                        Your email address will not be published. Required
+                        fields are marked *
+                      </p>
+                      <span>Your Rating :</span>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                      <i class="fa-solid fa-star"></i>
+                    </div>
+                    <div class="form-title">
+                      <div class="your-review">
+                        <input
+                          type="text"
+                          placeholder="Write your message here..."
+                        />
+                        <div class="name-title">
+                          <label for="">Your Review</label>
+                        </div>
+                      </div>
+                      <div class="name-review">
+                        <input type="text" placeholder="Agshin Valiyev" />
+                        <div class="email-title">
+                          <label for="">Your Name</label>
+                        </div>
+                      </div>
+                      <div class="email-review">
+                        <input type="text" placeholder="shofy@mail.com" />
+                        <div class="msg-title">
+                          <label for="">Your Email</label>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="check-box">
+                      <input type="checkbox" name="" id="" />
+                      <p>Save my name, email, and website in this browser for the next time I comment.</p>
+                    </div>
+                    <div class="submit">
+                      <button>Submit</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="related-products">
+        <div class="container-main">
+          <div class="title">
+            <span>Next day Products</span>
+            <h3>Related Products</h3>
+          </div>
+          <div class="product-related">
+            <div class="card1">
+              <div class="product">
+                  <div class="image">
+                      <img src="./assets/images/cat1-headphone.png" alt="">
+                      <div class="product-action">
+                          <ul>
+                              <li>
+                                  <a href="" class="add-basket">
+                                      <img src="./assets/icons/add-basket.svg" alt="">
+                                      <span class="tools-text">Add to Cart</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a class="product-details">
+                                      <img src="./assets/icons/product-details.svg" alt="">
+                                      <span class="tools-text">Quick View</span>
+                                  </a>
+                              </li>
+                              <li>
+                                  <a href="" class="add-wishlist">
+                                      <img src="./assets/icons/add-wishlist.svg" alt="">
+                                      <span class="tools-text">Add to Wishlist</span>
+                                  </a>
+                              </li>
+                          </ul>
+                      </div>
+                  </div>
+                  <div class="content">
+                    <span class="title">Headphones</span>
+                    <h3 class="name">Gaming Headphone</h3>
+                    <span class="new"> $123.50</span>
+                    <span class="old"> $130</span>
+                  </div>
+              </div>
+          </div>
+            <div class="card2">
+              <div class="product">
+                <div class="image">
+                    <img src="./assets/images/jbl-headphone.png" alt="">
+                    <div class="product-action">
+                        <ul>
+                            <li>
+                                <a href="" class="add-basket">
+                                    <img src="./assets/icons/add-basket.svg" alt="">
+                                    <span class="tools-text">Add to Cart</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a class="product-details">
+                                    <img src="./assets/icons/product-details.svg" alt="">
+                                    <span class="tools-text">Quick View</span>
+                                </a>
+                            </li>
+                            <li>
+                                <a href="" class="add-wishlist">
+                                    <img src="./assets/icons/add-wishlist.svg" alt="">
+                                    <span class="tools-text">Add to Wishlist</span>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="out-stock">
+                      <span>Out-Of-Stock</span>
+                  </div>
+                </div>
+                <div class="content">
+                  <span class="title">Headphones</span>
+                  <h3 class="name">Headphone with Mic</h3>
+                  <span class="new"> $110</span>
+                </div>
+            </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <section id="footer-up">
+        <div class="container-main">
+          <div class="row">
+            <div class="col-4">
+              <div class="left-side">
+                <div class="image">
+                  <img src="./assets/icons/logo.svg" alt="" />
+                </div>
+                <p>
+                  We are a team of designers and developers that create high
+                  quality WordPress
+                </p>
+                <div class="social-networks">
+                  <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                  <a href=""><i class="fa-brands fa-twitter"></i></a>
+                  <a href=""><i class="fa-brands fa-linkedin-in"></i></a>
+                  <a href=""><i class="fa-brands fa-vimeo-v"></i></a>
+                </div>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="account">
+                <ul>
+                  <h6>My Account</h6>
+                  <li><a href="">Track Orders</a></li>
+                  <li><a href="">Shipping</a></li>
+                  <li><a href="">Wishlist</a></li>
+                  <li><a href="">My Account</a></li>
+                  <li><a href="">Order History</a></li>
+                  <li><a href="">Returns</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-2">
+              <div class="information">
+                <ul>
+                  <h6>Information</h6>
+                  <li><a href="">Our Story</a></li>
+                  <li><a href="">Careers</a></li>
+                  <li><a href="">Privacy Policy</a></li>
+                  <li><a href="">Terms & Conditions</a></li>
+                  <li><a href="">Latest News</a></li>
+                  <li><a href="">Contact Us</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-4">
+              <div class="contact-us">
+                <h6>Talk To Us</h6>
+                <span>Got Questions? Call us</span>
+                <a href="" class="number">+670 413 90 762</a>
+                <a href="" class="email"
+                  ><img
+                    src="./assets/icons/email-icon.svg"
+                    alt=""
+                  />shofy@support.com</a
+                >
+                <a href="" class="address"
+                  ><img src="./assets/icons/location-icon.svg" alt="" />79
+                  Sleepy Hollow St.<br />Jamaica, New York 1432</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="footer-down">
+        <div class="container-main">
+          <div class="down">
+            <div class="row">
+              <div class="col-6">
+                <p>
+                  © 2024 All Rights Reserved | Angular Template by Themepure
+                </p>
+              </div>
+              <div class="col-6">
+                <div class="payments">
+                  <img src="./assets/images/payments.png" alt="" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div class="back-to-top">
+        <a href=""><i class="fa-solid fa-angle-up arrow"></i></a>
+      </div>
+    </footer>
+
+    <script
+      src="https://kit.fontawesome.com/aa66850c3d.js"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"
+      integrity="sha512-VEd+nq25CkR676O+pLBnDW09R7VQX9Mdiij052gVCp5yVH3jGtH70Ho/UUv4mJDsEdTvqRCFZg0NKGiojGnUCw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+      integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+      integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+      crossorigin="anonymous"
+    ></script>
+    <script src="./assets/js/product-detail.js"></script>
+  </body>
+</html>
